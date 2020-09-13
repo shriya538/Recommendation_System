@@ -69,7 +69,7 @@ mapr1=pp.map(lambda x:(x[0],x[1].lower())).flatMapValues(lambda x: re.split(r'['
                                        
 #(businessid,word),count
 
-#Remember haven't removed - check if bt hogi ki nahi
+
 #pp2=pp.flatMapValues(lambda x: x.split()).map(lambda x: (x[0],x[1].lower())).flatMapValues(lambda x: re.split('[\)\[,.$!?:%0123456789;"\]\(]',x)).filter(lambda x: x[1]!='')
 #split,lowered,punctuation removed,''
 #pp2=pp.map(lambda x:(x[0],x[1].lower())).flatMapValues(lambda x: re.split('[\)\[,.$!?:%0123456789;"\]\(]',x)).groupByKey()
